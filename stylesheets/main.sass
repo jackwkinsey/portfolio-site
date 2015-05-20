@@ -1,0 +1,120 @@
+// Header image - full page
+header
+    background-image: url('../assets/dev-space01.jpeg')
+
+    // Make image take up full page
+    height: 100vh
+    background-size: cover
+    background-position: center center
+    margin-bottom: 50px
+
+    // Use flex box for display
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    // All text should be white in the header by default with black stroke
+    color: white
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+
+    // Name
+    h1
+        // pesky whitspace fix
+        margin-top: 0
+        padding-top: 30vh
+        font-size: 3em
+
+    // Logo
+    img
+        width: 128px
+        height: 128px
+
+    // Tagline
+    h4
+        flex-grow: 1
+        font-family: 'Raleway', sans-serif
+        font-size: 1em
+
+    // Nav bar
+    nav
+        display: flex
+        justify-content: space-around
+        width: 95%
+        padding-bottom: 20px
+
+        .nav-item
+            a, a:visited
+                text-decoration: none
+                color: white
+            margin: 5px
+            border: 2px solid white
+            text-align: center
+            font-size: 1em
+            font-family: 'Oswald', sans-serif
+            width: 25%
+
+// All h1 and h2 headers should use 'Marvel' font
+h1, h2
+    font-family: 'Marvel', sans-serif
+
+// Default styles for all sections
+section
+    width: 90%
+    margin: 0 auto 10px
+    text-align: center
+    a, a:hover, a:visited, a:active
+        text-decoration: none
+        color: #333
+    p
+        font-family: 'Raleway', sans-serif
+
+// Default styling for about section
+.about
+    img
+        border-radius: 50%
+        width: 100px
+        height: 100px
+
+// Styling for skills section
+// When user hovers over skill image change text in "skill-info" div
+.skill-01-info, .skill-02-info, .skill-03-info, .skill-04-info
+    display: none
+
+.skill-01:target
+    background: red
+    ~ .skill-01-info
+        display: block
+
+.skill-02:hover
+    background: blue
+    ~ .skill-02-info
+        display: block
+
+.skill-03:hover
+    background: green
+    ~ .skill-03-info
+        display: block
+
+.skill-04:hover
+    background: yellow
+    ~ .skill-04-info
+        display: block
+
+// Footer styling (should be sticky)
+footer
+    font-family: 'Marvel', sans-serif
+    color: white
+    width: 100%
+    text-align: center
+    background: #333
+    margin-bottom: 0px
+    height: 50px
+    p
+        vertical-align: middle
+        line-height: 50px
+        margin: 0px
+        font-size: 0.9em
+        a, a:hover, a:visited, a:active
+            text-decoration: underline
+            color: white
