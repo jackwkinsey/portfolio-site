@@ -3,7 +3,7 @@ header {
   height: 100vh;
   background-size: cover;
   background-position: center center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -25,11 +25,12 @@ header {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
   header h1 {
     margin-top: 0;
-    padding-top: 30vh;
+    padding-top: 10px;
+    font-family: "Marvel", sans-serif;
     font-size: 3em; }
   header img {
-    width: 128px;
-    height: 128px; }
+    width: 98px;
+    height: 98px; }
   header h4 {
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
@@ -61,43 +62,49 @@ header {
 h1, h2 {
   font-family: "Marvel", sans-serif; }
 
+hr {
+  color: #ddd;
+  width: 85%; }
+
 section {
   width: 90%;
-  margin: 0 auto 10px;
-  text-align: center; }
+  margin: 20px auto;
+  text-align: center;
+  color: #333; }
   section a, section a:hover, section a:visited, section a:active {
     text-decoration: none;
-    color: #333; }
+    color: inherit; }
   section p {
-    font-family: "Raleway", sans-serif; }
+    font-family: "Raleway", sans-serif;
+    text-align: justify; }
+    section p a {
+      text-decoration: underline; }
+  section h2 {
+    text-align: center; }
 
 .about img {
-  border-radius: 50%;
   width: 100px;
   height: 100px; }
 
-.skill-01-info, .skill-02-info, .skill-03-info, .skill-04-info {
-  display: none; }
-
-.skill-01:target {
-  background: red; }
-  .skill-01:target ~ .skill-01-info {
-    display: block; }
-
-.skill-02:hover {
-  background: blue; }
-  .skill-02:hover ~ .skill-02-info {
-    display: block; }
-
-.skill-03:hover {
-  background: green; }
-  .skill-03:hover ~ .skill-03-info {
-    display: block; }
-
-.skill-04:hover {
-  background: yellow; }
-  .skill-04:hover ~ .skill-04-info {
-    display: block; }
+.skills .skill-images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  width: 80%;
+  margin: 0 auto; }
+  .skills .skill-images img {
+    width: 48px;
+    height: 48px;
+    margin: 0px 5px 15px; }
+.skills .skill-info {
+  margin: 0 auto;
+  width: 85%;
+  height: 30vh;
+  background: #ddd; }
 
 footer {
   font-family: "Marvel", sans-serif;
